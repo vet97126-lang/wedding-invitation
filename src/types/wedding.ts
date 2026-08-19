@@ -2,6 +2,7 @@ export interface AccountInfo {
   bank: string;
   number: string;
   holder: string;
+  phone : string;
 }
 
 export interface WeddingAccountConfig {

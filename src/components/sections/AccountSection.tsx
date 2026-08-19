@@ -128,6 +128,7 @@ const AccountSection = ({ bgColor = 'white' }: AccountSectionProps) => {
           {title}
         </AccountRowTitle>
         <AccountRowInfo>
+          <AccountPhone>{accountInfo.phone}</AccountPhone>
           <AccountBank>{bankText}</AccountBank>
           <AccountNumber>{numberAndHolder}</AccountNumber>
         </AccountRowInfo>
@@ -351,6 +352,15 @@ const AccountNumber = styled.div`
   word-break: break-all;
   @media (max-width: 580px) {
     font-size: 0.85rem;
+  }
+`;
+
+const AccountPhone = styled.div`
+  font-size: 0.85rem;
+  color: var(--text-medium);
+  line-height: 1.3;
+  @media (max-width: 580px) {
+    font-size: 0.75rem;
   }
 `;
 

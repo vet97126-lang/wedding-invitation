@@ -13,9 +13,9 @@ interface GalleryConfig {
 export const weddingConfig = {
   // 메타 정보
   meta: {
-    title: "신랑 ❤️ 신부의 결혼식에 초대합니다",
+    title: "김지훈 ❤️ 조선영의 결혼식에 초대합니다",
     description: "결혼식 초대장",
-    ogImage: "/images/ha0h-1fsi-bqt3.jpg",
+    ogImage: "/images/gallery/main.jpg",
     noIndex: true,
     _jwk_watermark_id: uniqueIdentifier,
   },
@@ -23,96 +23,80 @@ export const weddingConfig = {
   // 메인 화면
   main: {
     title: "Wedding Invitation",
-    image: "/images/ha0h-1fsi-bqt3.jpg",
-    date: "2026년 5월 16일 토요일 12시 30분",
-    venue: "웨딩홀 이름"
+    image: "/images/gallery/main.jpg",
+    date: "2026년 11월 21일 토요일 16시 20분",
+    venue: "창원 컨벤션센터"
   },
 
   // 소개글
   intro: {
-    title: "",
-    text: "서로를 바라보며 걸어온\n소중한 발걸음이\n이제 하나의 길로 이어집니다.\n\n사랑과 믿음으로\n새 가정을 이루는 저희 두 사람의\n작은 시작을 알려드립니다."
+    title: "Wedding Invitation",
+    text: "함께 보낸 4년의 시간 동안 서로의 계절이 되어주던 우리가\n선선한 가을바람이 불어오는 이 좋은날,\n서로의 이름으로 평생을 약속하려 합니다."
   },
 
   // 결혼식 일정
   date: {
     year: 2026,
-    month: 5,
-    day: 16,
-    hour: 12,
-    minute: 30,
-    displayDate: "2026.05.16 SAT PM 12:30",
+    month: 11,
+    day: 21,
+    hour: 16,
+    minute: 20,
+    displayDate: "2026.11.21 SAT PM 16:20",
   },
 
   // 장소 정보
   venue: {
-    name: "웨딩홀 이름",
-    address: "서울특별시 강남구 테헤란로 123\n웨딩홀 이름",
-    tel: "02-1234-5678",
-    naverMapId: "웨딩홀 이름", // 네이버 지도 검색용 장소명
+    name: "창원컨벤션센터",
+    address: "경상남도 창원시 성산구 원이대로 362",
+    tel: "055-212-1000",
+    naverMapId: "창원컨벤션센터", // 네이버 지도 검색용 장소명
     coordinates: {
-      latitude: 37.5665,
-      longitude: 126.9780,
+      latitude: 35.2386,
+      longitude: 128.6568,
     },
-    placeId: "123456789", // 네이버 지도 장소 ID
-    mapZoom: "17", // 지도 줌 레벨
+    placeId: "13282579", // 네이버 지도 장소 ID
+    mapZoom: "17.30", // 지도 줌 레벨
     mapNaverCoordinates: "14141300,4507203,15,0,0,0,dh", // 네이버 지도 길찾기 URL용 좌표 파라미터 (구 형식)
     transportation: {
-      subway: "지하철역 1번 출구에서 도보 5분",
-      bus: "간선\n 101, 102, 103\n지선\n 1234, 5678",
+      train: "창원 중앙역에서 220, 221번 버스",
+      bus: "창원 종합터미널에서 103번 버스",
     },
-    parking: "건물 지하 주차장 이용 가능 (2시간 무료)",
-    // 신랑측 배차 안내
-    groomShuttle: {
-      location: "신랑측 배차 출발지",
-      departureTime: "오전 10시 30분 출발",
-      contact: {
-        name: "담당자명",
-        tel: "010-1234-5678"
-      }
-    },
-    // 신부측 배차 안내
-    brideShuttle: {
-      location: "신부측 배차 출발지",
-      departureTime: "오전 11시 출발",
-      contact: {
-        name: "담당자명",
-        tel: "010-9876-5432"
-      }
-    }
+    parking: "건물 주차장 이용 가능 (2시간 무료)",
   },
 
   // 갤러리
   gallery: {
-    layout: "grid" as GalleryLayout, // "scroll" 또는 "grid" 선택
+    layout: "scroll" as GalleryLayout, // "scroll" 또는 "grid" 선택
     position: "bottom" as GalleryPosition, // "middle" (현재 위치) 또는 "bottom" (맨 하단) 선택
     images: [
-      "/images/gallery/image1.jpg",
-      "/images/gallery/image2.jpg",
-      "/images/gallery/image3.jpg",
-      "/images/gallery/image4.jpg",
-      "/images/gallery/image5.jpg",
-      "/images/gallery/image6.jpg",
-      "/images/gallery/image7.jpg",
-      "/images/gallery/image8.jpg",
-      "/images/gallery/image9.jpg",
+      "/images/gallery/image01.jpg",
+      "/images/gallery/image02.jpg",
+      "/images/gallery/image03.jpg",
+      "/images/gallery/image04.jpg",
+      "/images/gallery/image05.jpg",
+      "/images/gallery/image06.jpg",
+      "/images/gallery/image07.jpg",
+      "/images/gallery/image08.jpg",
+      "/images/gallery/image09.jpg",
+      "/images/gallery/image10.jpg",
+      "/images/gallery/image11.jpg",
     ],
   } as GalleryConfig,
 
   // 초대의 말씀
   invitation: {
-    message: "한 줄기 별빛이 되어 만난 인연\n평생을 함께 걸어가려 합니다.\n\n소중한 분들의 축복 속에\n저희 두 사람이 첫 걸음을 내딛습니다.\n\n귀한 시간 내어 함께해 주신다면\n그 어떤 축복보다 값진 선물이 될 것입니다.",
+    message: "늘 귀한 마음으로 저희를 아껴주신\n고마운 분들께 감사의 마음을 담아 자리를 마련했습니다.\n\n새로운 인생을 펼쳐가는 시작의 자리에 오셔서\n아낌없는 격려와 축하를 더해 주시면\n두 사람에게 큰 힘이 되겠습니다.",
     groom: {
-      name: "신랑이름",
-      label: "아들",
-      father: "신랑아버지",
-      mother: "신랑어머니",
+      name: "김지훈",
+      label: "장남",
+      father: "김성민",
+      mother: "강민자",
     },
     bride: {
-      name: "신부이름",
-      label: "딸",
-      father: "신부아버지",
-      mother: "신부어머니",
+      name: "조선영",
+      label: "장녀",
+      father: "조복제",
+      mother: "장명숙",
     },
   },
 
@@ -121,39 +105,45 @@ export const weddingConfig = {
     groom: {
       bank: "은행명",
       number: "123-456-789012",
-      holder: "신랑이름",
+      phone: "010-3008-3172",
+      holder: "김지훈",
     },
     bride: {
-      bank: "은행명",
-      number: "987-654-321098",
-      holder: "신부이름",
+      bank: "신한은행",
+      number: "110-456-207551",
+      phone: "010-6417-0551",
+      holder: "조선영",
     },
     groomFather: {
       bank: "은행명",
       number: "111-222-333444",
-      holder: "신랑아버지",
+      phone: "111-1111-1111",
+      holder: "김성민",
     },
     groomMother: {
       bank: "은행명",
       number: "555-666-777888",
-      holder: "신랑어머니",
+      phone: "222-2222-2222",
+      holder: "강민자",
     },
     brideFather: {
       bank: "은행명",
       number: "999-000-111222",
-      holder: "신부아버지",
+      phone: "333-3333-3333",
+      holder: "조복제",
     },
     brideMother: {
       bank: "은행명",
       number: "333-444-555666",
-      holder: "신부어머니",
+      phone: "444-4444-4444",
+      holder: "장명숙",
     }
   },
 
   // RSVP 설정
   rsvp: {
-    enabled: false, // RSVP 섹션 표시 여부
-    showMealOption: false, // 식사 여부 입력 옵션 표시 여부
+    enabled: true, // RSVP 섹션 표시 여부
+    showMealOption: true, // 식사 여부 입력 옵션 표시 여부
   },
 
   // 슬랙 알림 설정
